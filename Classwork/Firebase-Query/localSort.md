@@ -2,7 +2,7 @@
 
 var list = [2,1,3,6,5,9,4,7,0,8];
 list.sort(function(a, b){
-	return a < b; // [0,1,2,3,4,5,6,7,8,9]
+	return a < b; // [0,1,2,3,4,5,6,7,8,9,10]
 });
 
 If compareFunction(a, b) is less than 0, sort a to an index lower than b, i.e. a comes first.
