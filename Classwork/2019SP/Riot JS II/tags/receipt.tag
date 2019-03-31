@@ -17,6 +17,7 @@
 							<th>PRICE</th>
 						</tr>
 						<tr each={ item, i in foodItems }>
+							{console.log(this);}
 							<td>{ item }</td>
 							<td>{ toDollars(priceLookup[item]) } { servings > 1 ? "x " + servings : "" }</td>
 						</tr>

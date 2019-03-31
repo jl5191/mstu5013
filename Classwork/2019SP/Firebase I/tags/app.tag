@@ -30,6 +30,10 @@
 
 		add(event) {
 			if (this.text) {
+				database.collection('toDoItems').add({
+					title: this.text,
+					done: false
+				});
 				this.items.push({title: this.text});
 				this.text = this.refs.input.value = '';
 			}
@@ -37,6 +41,7 @@
 		}
 
 		removeAllDone(event) {
+
 			this.items = this.items.filter(function (item) {
 				return !item.done;
 			});
